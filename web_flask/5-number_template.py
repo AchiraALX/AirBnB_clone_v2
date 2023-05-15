@@ -51,7 +51,7 @@ def number_template(n):
     """Return number_template only if n is int"""
     try:
         int(n)
-        return render_template("number_template.html", n=n)
+        return render_template("5-number_template.html", n=n)
 
     except ValueError:
         abort(404)
