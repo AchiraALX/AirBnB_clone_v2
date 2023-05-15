@@ -2,6 +2,12 @@
 """test for amenity"""
 import unittest
 import os
+import sys
+# Get the absolute path to the models directory
+models_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'models'))
+
+# Add the models directory to the system path
+sys.path.append(models_dir)
 from models.amenity import Amenity
 from models.base_model import BaseModel
 import pep8
